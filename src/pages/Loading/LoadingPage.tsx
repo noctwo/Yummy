@@ -20,8 +20,6 @@ useEffect(() => {
         .catch(err => console.error("Fehler beim fehtchen", err))
 }, [])
 
-console.log(categoriesData?.categories)
-
     return (
         <h1>Loading...</h1>
         

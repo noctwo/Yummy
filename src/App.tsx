@@ -3,8 +3,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import CategoryItems from "./pages/CategoryItemsPage";
-import DetailPage from "./pages/DetailPage";
+import CategoryItems from "./pages/CategoryItemsPage/CategoryItemsPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
 import { useState } from "react";
 import { CategoriesContext, LoadingContext } from "./context/context";
 import LoadingPage from "./pages/Loading/LoadingPage";
@@ -24,8 +24,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<CategoryItems />} />
-            <Route path="/" element={<DetailPage />} />
+            <Route path="/category/:categoryname" element={<CategoryItems />} />
+            <Route path="/category/meal/:mealid" element={<DetailPage />} />
             <Route path="/" element={<Home />} />
           </Routes>
           <Footer />

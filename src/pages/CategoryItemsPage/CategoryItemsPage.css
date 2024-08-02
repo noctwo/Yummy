@@ -1,0 +1,8 @@
+.category-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.category-items-wrapper img {
+width: 300px;
+}
