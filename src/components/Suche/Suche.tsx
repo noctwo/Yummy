@@ -1,19 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Suche.css";
-import { Meal2 } from "../../pages/DetailPage/DetailPage";
+import { SearchContext, SearchResultDataContext } from "../../context/context";
 
 const Suche = () => {
   const [search, setSearch] = useState<string>("");
-  const [searchResults, setSearchResults] = useState<Meal2 | null>(null);
+  const searchResultData = useContext(SearchResultDataContext);
 
+  const displaySearch2 = useContext(SearchContext);
 
   const check = () => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((res) => res.json())
-      .then((data) => setSearchResults(data))
+      .then((data) => searchResultData?.setSearchResults(data.meals))
       .catch((err) => console.error("Fehler beim fehtchen", err));
-      console.log(searchResults)
+    displaySearch2?.setDisplaySearch(true);
   };
+
+  console.log(searchResultData?.searchResults);
 
   return (
     <div>
