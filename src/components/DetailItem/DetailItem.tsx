@@ -14,7 +14,6 @@ const DetailItem: React.FC<MealItemProps> = (props) => {
             <img src={props.item.strMealThumb} alt="" />
             </Link>
         </div>
-
     );
 }
  

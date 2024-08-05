@@ -17,6 +17,8 @@
 .detail-item-info{
     display: flex;
     margin-top: 5em;
+    width: 80%;
+    margin: 3em auto;
 }
 
 .detail-item-info-text{
@@ -37,3 +39,11 @@
     text-align: left;
     line-height: 2.5rem;
 }
+
+
+@media screen and (max-width: 500px){
+    .detail-item-info{
+        flex-direction: column;
+        background-color: #222;
+    }
+  }

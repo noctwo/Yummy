@@ -13,6 +13,7 @@ const CategoryList = () => {
             <h2>{item.strCategory}</h2>
             <img src={item.strCategoryThumb} alt="" />
           </Link>
+          
         </div>
       ))}
     </div>
