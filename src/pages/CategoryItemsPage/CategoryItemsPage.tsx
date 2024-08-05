@@ -29,7 +29,7 @@ const CategoryItemsPage = () => {
   console.log(filter);
 
   return (
-    <div className="category-items-wrapper">
+    <div className="category-wrapper">
       {filter?.map((item, index) => (
         <div key={index}>
           <Link to={`/category/meal/${item.idMeal}`}>

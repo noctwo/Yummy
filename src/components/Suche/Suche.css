@@ -1,0 +1,7 @@
+.search-wrapper{
+    width: 100%;
+}
+
+.search-wrapper input[type=text]{
+    width: 50%;
+}

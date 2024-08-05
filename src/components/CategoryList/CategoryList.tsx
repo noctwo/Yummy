@@ -8,9 +8,9 @@ const CategoryList = () => {
   return (
     <div className="category-wrapper">
       {categoriesData?.categories?.map((item, index) => (
-        <div key={index}>
+        <div className ="category-card" key={index}>
           <Link to={`/category/${item.strCategory}`}>
-            <h1>{item.strCategory}</h1>
+            <h2>{item.strCategory}</h2>
             <img src={item.strCategoryThumb} alt="" />
           </Link>
         </div>

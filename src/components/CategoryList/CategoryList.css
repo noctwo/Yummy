@@ -1,4 +1,29 @@
 .category-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 1800px;
+    margin: 3em auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 2em;
+}
+
+.category-wrapper img{
+    border-radius: 16px;
+}
+
+.category-card{
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 2em 1em;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-card:hover{
+    -webkit-box-shadow: 4px 1px 21px -7px rgba(34,34,34,0.40); 
+    box-shadow: 4px 1px 21px -7px rgba(34,34,34,0.40);
+    cursor: pointer;
 }
