@@ -1,0 +1,11 @@
+footer{
+    margin-top: 5em;
+    width: 100%;
+}
+
+.footer-social-wrapper{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}

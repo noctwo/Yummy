@@ -19,7 +19,7 @@ const Suche = () => {
   console.log(searchResultData?.searchResults);
 
   return (
-    <div>
+    <div className="search-wrapper">
       <input type="text" onChange={(event) => setSearch(event.target.value)} />
       <button onClick={check}>Search</button>
     </div>

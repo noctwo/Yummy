@@ -8,13 +8,12 @@ interface MealItemProps {
 
 const DetailItem: React.FC<MealItemProps> = (props) => {
     return (
-        <div>
+        <div className ="category-card">
             <Link to={`/category/meal/${props.item.idMeal}`}>
-            <h1>{props.item.strMeal}</h1>
+            <h2>{props.item.strMeal}</h2>
             <img src={props.item.strMealThumb} alt="" />
             </Link>
         </div>
-
     );
 }
  

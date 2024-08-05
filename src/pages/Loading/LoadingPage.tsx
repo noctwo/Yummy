@@ -21,8 +21,9 @@ useEffect(() => {
 }, [])
 
     return (
-        <h1>Loading...</h1>
-        
+       <div className ="loading-wrapper">
+        <span className="loader"></span>
+        </div>
     );
 }
  
