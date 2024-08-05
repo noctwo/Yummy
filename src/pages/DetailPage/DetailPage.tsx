@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./DetailPage.css"
 
 export interface IMealDetail {
@@ -74,24 +74,43 @@ const DetailPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="detail-view-wrapper">
+      <div className="detail-img-wrapper">
       <img src={filter?.strMealThumb} alt="" />
-      <div className="item-info">
-        <div>
+      </div>
+      <div className="detail-item-info">
+        <div className="detail-item-info-text">
           <h2>{filter?.strMeal}</h2>
-          <h3>{filter?.strInstructions}</h3>
+          <p>{filter?.strInstructions}</p>
         </div>
-        <div>
+        <div className="ingredients-sidebar">
+          <h3>Igredients</h3>
             <ul>
-            <li>{filter?.strIngredient1}</li>
-            <li>{filter?.strIngredient2}</li>
-            <li>{filter?.strIngredient3}</li>
-            <li>{filter?.strIngredient4}</li>
-            <li>{filter?.strIngredient5}</li>
-            <li>{filter?.strIngredient6}</li>
-            <li>{filter?.strIngredient7}</li>
+            <li>{filter?.strIngredient1}  {filter?.strMeasure1}</li>
+            <li>{filter?.strIngredient2}  {filter?.strMeasure2}</li>
+            <li>{filter?.strIngredient3}  {filter?.strMeasure3}</li>
+            <li>{filter?.strIngredient4}  {filter?.strMeasure4}</li>
+            <li>{filter?.strIngredient5}  {filter?.strMeasure5}</li>
+            <li>{filter?.strIngredient6}  {filter?.strMeasure6}</li>
+            <li>{filter?.strIngredient7}  {filter?.strMeasure7}</li>
+            <li>{filter?.strIngredient8}  {filter?.strMeasure8}</li>
+            <li>{filter?.strIngredient9}  {filter?.strMeasure9}</li>
+            <li>{filter?.strIngredient10}  {filter?.strMeasure10}</li>
+            <li>{filter?.strIngredient11}  {filter?.strMeasure11}</li>
+            <li>{filter?.strIngredient12}  {filter?.strMeasure12}</li>
+            <li>{filter?.strIngredient13}  {filter?.strMeasure13}</li>
+            <li>{filter?.strIngredient14}  {filter?.strMeasure14}</li>
+            <li>{filter?.strIngredient15}  {filter?.strMeasure15}</li>
+            <li>{filter?.strIngredient16}  {filter?.strMeasure16}</li>
+            <li>{filter?.strIngredient17}  {filter?.strMeasure17}</li>
+            <li>{filter?.strIngredient18}  {filter?.strMeasure18}</li>
+            <li>{filter?.strIngredient19}  {filter?.strMeasure19}</li>
+            <li>{filter?.strIngredient20}  {filter?.strMeasure20}</li>
             </ul>
-        </div>
+            <Link to={filter?.strYoutube}>
+            <button>Watch on Youtube</button>
+            </Link>
+      </div>
       </div>
     </div>
   );
