@@ -4,6 +4,9 @@ header {
   align-content: center;
   align-items: center;
 }
+.yummy-titel {
+  margin: 0;
+}
 
 /* header img {
   width: 50%;
