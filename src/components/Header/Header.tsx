@@ -27,8 +27,8 @@ const Header = () => {
 
   return (
     <header>
-      <button className="dark" onClick={switchTheme}>
-        Dark
+      <button className="toggle-theme" onClick={switchTheme}>
+        hola
       </button>
       <Link to="/">
         <button className="logo-button" onClick={searchToFalse}>

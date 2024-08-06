@@ -16,7 +16,6 @@ useEffect(()=> {
   .catch((err) => console.error("Fehler beim fehtchen", err));
   
 },[])
-// console.log(random?.idMeal)
 
   return (
     <div className="category-wrapper">
