@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   font-synthesis: none;
@@ -7,8 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   /* background-color: #F6F3F0; */
 }
@@ -17,45 +16,46 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   color: #222;
   font-size: 1.1rem;
   line-height: 1.7rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-button{
-  background-color: #FEBF00;
+button {
+  background-color: #febf00;
   padding: 1em 2em;
   border: none;
   border-radius: 25px;
 }
 
- button:hover{
-  background-color: #FE8B00;
+button:hover {
+  background-color: #fe8b00;
   cursor: pointer;
   color: #fff;
 }
 
-input[type=text]{
+input[type="text"] {
   border-radius: 25px;
   border: 1px solid #222;
   padding: 1em 2em;
   margin-right: 1.5em;
 }
 
-h1{
-  font-size: 3.5rem;
+h1 {
+  font-size: 5.5rem;
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
   color: #222;
 }
 
-h2, h3{
+h2,
+h3 {
   font-size: 1.5rem;
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
@@ -64,7 +64,37 @@ h2, h3{
 }
 
 .dark {
-  background-color: black;
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+
+  .logo-image-wrapper {
+    background-image: url("./img/Yummy_yeah.png");
+  }
+
+  .dark-image-wrapper {
+    background-image: url("./img/mond_hell.png");
+    width: 20%;
+    margin-top: 2%;
+    background-position: cover;
+  }
+
+  h2,
+  h3,
+  h1,
+  p,
+  li {
+    color: white;
+  }
+
+  .category-card {
+    border-color: white;
+  }
+
+  .ingredients-sidebar {
+    border-color: white;
+  }
 }
 
 .light {

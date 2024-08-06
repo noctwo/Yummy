@@ -27,13 +27,13 @@ const Header = () => {
 
   return (
     <header>
-      <button className="toggle-theme" onClick={switchTheme}>
-        hola
-      </button>
+      <div className="toggleDark"><button className="toggle-theme" onClick={switchTheme}>
+      <div className="dark-image-wrapper">{/* <img src="/img/sun (1).svg" alt="" /> */}</div>
+      </button></div>
       <Link to="/">
         <button className="logo-button" onClick={searchToFalse}>
           <h1>Yummy</h1>
-          <img src="/img/yummy-logo.png" className="header-logo"></img>
+          <div className="logo-image-wrapper">{/* <img src="/img/yummy-logo.png" className="header-logo"></img> */}</div>
         </button>
       </Link>
       <Suche />

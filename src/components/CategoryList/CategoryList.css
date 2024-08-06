@@ -1,37 +1,48 @@
 .category-wrapper {
-    width: 90%;
-    max-width: 1800px;
-    margin: 3em auto;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
-    gap: 2em;
+  width: 90%;
+  max-width: 1800px;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 2em;
 }
 
-.category-wrapper img{
-    border-radius: 16px;
+.category-wrapper img {
+  border-radius: 16px;
 }
 
-.category-card{
-    border: 1px solid #222;
-    border-radius: 16px;
-    padding: 2em 1em;
-    transition: ease-in-out 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.category-card {
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 2em 1em;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.category-card:hover{
-    -webkit-box-shadow: 4px 1px 21px -7px rgba(34,34,34,0.40); 
-    box-shadow: 4px 1px 21px -7px rgba(34,34,34,0.40);
-    cursor: pointer;
+.category-card:hover {
+  -webkit-box-shadow: 4px 1px 21px -7px rgba(34, 34, 34, 0.4);
+  box-shadow: 4px 1px 21px -7px rgba(34, 34, 34, 0.4);
+  cursor: pointer;
 }
 
 .random-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: orange;
-    height: 300px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  height: 30vh;
+}
+
+.random-button a {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
 }
