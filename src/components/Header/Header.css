@@ -9,3 +9,13 @@ header img{
     width: 50%;
     margin: -3em 0 2em 2em;
 }
+
+header .logo-button {
+    border: none;
+    background-color: transparent;
+}
+
+header .logo-button:hover {
+    cursor: pointer;
+    background-color: transparent;
+}

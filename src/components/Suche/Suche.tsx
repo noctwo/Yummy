@@ -8,7 +8,7 @@ const Suche = () => {
 
   const displaySearch2 = useContext(SearchContext);
 
-  const check = () => {
+ const check = () => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((res) => res.json())
       .then((data) => searchResultData?.setSearchResults(data.meals))

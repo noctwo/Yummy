@@ -30,3 +30,11 @@ interface ISearchResultData {
 }
 
 export const SearchResultDataContext = createContext<ISearchResultData | null>(null)
+
+
+interface ITheme {
+    theme: string;
+    setTheme: React.Dispatch<React.SetStateAction<string>>
+}
+
+export const ThemeContext = createContext<ITheme | null>(null)

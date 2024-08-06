@@ -1,18 +1,21 @@
 import { useContext } from "react";
 import { SearchResultDataContext } from "../../context/context";
+import { Link } from "react-router-dom";
 
 const SearchedItem = () => {
   const searchResultData = useContext(SearchResultDataContext);
 
-console.log(searchResultData?.searchResults)
+  console.log(searchResultData?.searchResults);
 
   return (
     <div>
-      <h1>hola</h1>
       {searchResultData
         ? searchResultData?.searchResults?.map((item, index) => (
-            <div key={index}>
-              <h1>{item.idMeal}</h1>
+            <div className="category-card" key={index}>
+              <Link to={`/category/meal/${item.idMeal}`}>
+                <h2>{item.strMeal}</h2>
+                <img src={item.strMealThumb} alt="" />
+              </Link>
             </div>
           ))
         : null}

@@ -34,7 +34,7 @@ button{
   border-radius: 25px;
 }
 
-button:hover{
+ button:hover{
   background-color: #FE8B00;
   cursor: pointer;
   color: #fff;
@@ -61,4 +61,12 @@ h2, h3{
   font-weight: 400;
   font-style: normal;
   color: #222;
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
 }

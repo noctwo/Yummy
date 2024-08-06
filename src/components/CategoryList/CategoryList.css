@@ -27,3 +27,11 @@
     box-shadow: 4px 1px 21px -7px rgba(34,34,34,0.40);
     cursor: pointer;
 }
+
+.random-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 300px;
+}
