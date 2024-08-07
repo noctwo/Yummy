@@ -26,21 +26,28 @@ const Header = () => {
 
   return (
     <header>
-      <div className="toggleDark">
-        <button className="toggle-theme" onClick={switchTheme}>
-          <div className="dark-image-wrapper">
-            {/* <img src="/img/sun (1).svg" alt="" /> */}
-          </div>
-        </button>
-      </div>
+      <button className="toggle-theme" onClick={switchTheme}>
+        {useThemeContext?.theme === "dark" ? (
+          <img
+            className="dark-switcher switcher"
+            src="/img/dark.png"
+            alt="Switch to light theme"
+          />
+        ) : (
+          <img
+            className="light-switcher switcher"
+            src="/img/light.png"
+            alt="Switch to dark theme"
+          />
+        )}
+      </button>
       <Link to="/">
         <button className="logo-button" onClick={searchToFalse}>
           <h1 className="yummy-titel">Yummy</h1>
-          <div className="logo-image-wrapper">
-            {/* <img src="/img/yummy-logo.png" className="header-logo"></img> */}
-          </div>
+          <div className={`${useThemeContext?.theme}-image-wrapper divwrapper`}></div>
         </button>
       </Link>
+
       <Suche />
     </header>
   );

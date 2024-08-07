@@ -5,11 +5,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #F6F3F0; */
 }
 
 a {
@@ -63,40 +63,17 @@ h3 {
   color: #222;
 }
 
-.dark {
-  background-color: #222;
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
 
-  .logo-image-wrapper {
-    background-image: url("./img/Yummy_yeah.png");
-  }
 
-  .dark-image-wrapper {
-    background-image: url("./img/mond_hell.png");
-    width: 20%;
-    margin-top: 2%;
-    background-position: cover;
-  }
 
-  h2,
-  h3,
-  h1,
-  p,
-  li {
-    color: white;
-  }
-
-  .category-card {
-    border-color: white;
-  }
-
-  .ingredients-sidebar {
-    border-color: white;
-  }
+li {
+  color: #222;
 }
 
-.light {
-  background-color: white;
+.category-card {
+  border-color: white;
+}
+
+.ingredients-sidebar {
+  border-color: white;
 }

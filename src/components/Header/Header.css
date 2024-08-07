@@ -1,55 +1,61 @@
 header {
   display: flex;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.toggle-theme {
+  align-self: self-end;
+  margin: 2rem;
+}
+
+.switcher {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dark-switcher {
+  display: block;
+}
+
+.light-switcher {
+  display: block;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logo-button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 38vh;
 }
 .yummy-titel {
   margin: 0;
 }
 
-/* header img {
-  width: 50%;
-  margin: -3em 0 2em 2em;
-} */
-
-header .logo-button,
-.toggle-theme {
-  border: none;
-  background-color: transparent;
-}
-
-header .logo-button:hover,
-.toggle-theme:hover {
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.toggle-theme {
-  text-align: right;
-  max-width: 5%;
-  margin-top: 2%;
-}
-
-.toggleDark {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.logo-image-wrapper {
-  width: 275px;
-  height: 250px;
-  background-image: url("./img/yummy-logo.png");
-  background-position: cover;
+.divwrapper {
+  display: block;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+
+.light-image-wrapper {
+  background-image: url("/img/Yummy_yeah.png");
 }
 
 .dark-image-wrapper {
-  background-image: url("./img/mond_dunkel.png");
-  width: 100px;
-  height: 100px;
-  margin-top: 2%;
-  background-position: cover;
+  background-image: url("/img/yummy-logo.png");
 }

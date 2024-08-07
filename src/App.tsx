@@ -24,7 +24,7 @@ function App() {
   const [theme, setTheme] = useState<string>("light");
 
   return (
-    <div className={`${theme} background`}>
+    <div className={`${theme}-background`}>
       <ThemeContext.Provider value={{theme, setTheme}}>
       <LoadingContext.Provider value={{ loading, setLoading }}>
         <CategoriesContext.Provider value={{ categories, setCategory }}>
