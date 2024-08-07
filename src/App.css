@@ -2,16 +2,11 @@
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
-  padding: 0;
 }
 
   .dark-background {
   background-color: #222;
    }
-
-  .light-background {
-    background-color: white;
-  }
 
 
   
