@@ -53,9 +53,11 @@ header a {
 
 
 .light-image-wrapper {
-  background-image: url("/img/Yummy_yeah.png");
+  background-image: url("/img/yummy-logo.png");
 }
 
 .dark-image-wrapper {
-  background-image: url("/img/yummy-logo.png");
+  background-image: url("/img/Yummy_yeah.png");
 }
+
+

@@ -42,10 +42,10 @@ const Header = () => {
         )}
       </button>
       <Link to="/">
-        <button className="logo-button" onClick={searchToFalse}>
+        <div className="logo-button" onClick={searchToFalse}>
           <h1 className="yummy-titel">Yummy</h1>
           <div className={`${useThemeContext?.theme}-image-wrapper divwrapper`}></div>
-        </button>
+        </div>
       </Link>
 
       <Suche />
