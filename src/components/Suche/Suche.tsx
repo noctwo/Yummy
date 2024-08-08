@@ -13,10 +13,9 @@ const Suche = () => {
       .then((res) => res.json())
       .then((data) => searchResultData?.setSearchResults(data.meals))
       .catch((err) => console.error("Fehler beim fehtchen", err));
-    displaySearch2?.setDisplaySearch(true);
+      displaySearch2?.setDisplaySearch(true);
   };
 
-  console.log(searchResultData?.searchResults);
 
   return (
     <div className="search-wrapper">

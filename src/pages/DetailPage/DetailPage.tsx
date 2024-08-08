@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./DetailPage.css"
+import { SearchContext } from "../../context/context";
+import SearchedItem from "../../components/SearchedItem/Searchitem";
 
 export interface IMealDetail {
   meals: { [key: string]: null | string }[];
@@ -65,6 +67,7 @@ export interface Meal2 {
 const DetailPage = () => {
   const [filter, setFilter] = useState<Meal2>(null!);
   const { mealid } = useParams<{ mealid?: string }>();
+  const displaySearch = useContext(SearchContext);
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}`)
@@ -74,6 +77,9 @@ const DetailPage = () => {
   }, []);
 
   return (
+
+    <>
+   {displaySearch?.displaySearch ? <SearchedItem/> : 
     <div className="detail-view-wrapper">
       <div className="detail-img-wrapper">
       <img src={filter?.strMealThumb} alt="" />
@@ -113,6 +119,8 @@ const DetailPage = () => {
       </div>
       </div>
     </div>
+    }
+     </>
   );
 };
 

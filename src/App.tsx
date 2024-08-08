@@ -36,20 +36,14 @@ function App() {
                 <LoadingPage />
               ) : (
                 <BrowserRouter>
-                  <Header />
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route
-                      path="/category/:categoryname"
-                      element={<CategoryItems />}
-                    />
-                    <Route
-                      path="/category/meal/:mealid"
-                      element={<DetailPage />}
-                    />
-                  </Routes>
-                  <Footer />
-                </BrowserRouter>
+                <Header />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/category/:categoryname" element={<CategoryItems />} />
+                  <Route path="/category/meal/:mealid" element={<DetailPage />} />
+                </Routes>
+                <Footer />
+              </BrowserRouter>
               )}
             </SearchContext.Provider>
           </SearchResultDataContext.Provider>

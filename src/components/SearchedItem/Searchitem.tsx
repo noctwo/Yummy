@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const SearchedItem = () => {
   const searchResultData = useContext(SearchResultDataContext);
 
-  console.log(searchResultData?.searchResults);
+
 
   return (
     <div className="category-wrapper">
