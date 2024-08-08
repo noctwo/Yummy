@@ -24,6 +24,7 @@
 .detail-item-info-text{
     width: 75%;
     padding: 3em 2em;
+    text-align: left;
 }
 
 .ingredients-sidebar{

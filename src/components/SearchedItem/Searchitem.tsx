@@ -8,7 +8,7 @@ const SearchedItem = () => {
   console.log(searchResultData?.searchResults);
 
   return (
-    <div>
+    <div className="category-wrapper">
       {searchResultData
         ? searchResultData?.searchResults?.map((item, index) => (
             <div className="category-card" key={index}>
