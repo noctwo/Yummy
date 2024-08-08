@@ -11,12 +11,14 @@ const SearchedItem = () => {
     <div className="category-wrapper">
       {searchResultData
         ? searchResultData?.searchResults?.map((item, index) => (
-            <div className="category-card" key={index}>
-              <Link to={`/category/meal/${item.idMeal}`}>
-                <h2>{item.strMeal}</h2>
-                <img src={item.strMealThumb} alt="" />
-              </Link>
-            </div>
+            <Link
+              to={`/category/meal/${item.idMeal}`}
+              className="category-card"
+              key={index}
+            >
+              <h2>{item.strMeal}</h2>
+              <img src={item.strMealThumb} alt="" />
+            </Link>
           ))
         : null}
     </div>

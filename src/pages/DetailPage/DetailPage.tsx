@@ -69,12 +69,16 @@ const DetailPage = () => {
   const { mealid } = useParams<{ mealid?: string }>();
   const displaySearch = useContext(SearchContext);
 
+ 
   useEffect(() => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}`)
-      .then((res) => res.json())
-      .then((data) => setFilter(data.meals[0]))
-      .catch((err) => console.error("Fehler beim fehtchen", err));
-  }, []);
+    if (mealid) {
+      fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}`)
+        .then((res) => res.json())
+        .then((data) => setFilter(data.meals[0]))
+        .catch((err) => console.error("Fehler beim fehtchen", err));
+        displaySearch?.setDisplaySearch(false)
+    }
+  }, [mealid]);
 
   return (
 
