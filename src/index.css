@@ -124,8 +124,17 @@ h3 {
 }
 
 .divwrapper {
-
   width: 100px;
   height: 100px;
 }
+
+.detail-info-text-img-container{
+  width: 100%
+}
+
+.detail-info-text-img-container{
+  width: 100%;
+  padding: 0;
+}
+
 }

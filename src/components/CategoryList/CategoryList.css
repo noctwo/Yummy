@@ -18,7 +18,8 @@
   transition: ease-in-out 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  min-height: 425px;
 }
 
 .category-card:hover {
@@ -46,9 +47,8 @@
 .category-wrapper > a {
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  min-height: 300px;
 }
 
 .random-button a {

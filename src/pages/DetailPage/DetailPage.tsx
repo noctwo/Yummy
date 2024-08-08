@@ -85,13 +85,16 @@ const DetailPage = () => {
     <>
    {displaySearch?.displaySearch ? <SearchedItem/> : 
     <div className="detail-view-wrapper">
-      <div className="detail-img-wrapper">
-      <img src={filter?.strMealThumb} alt="" />
-      </div>
+      
       <div className="detail-item-info">
+        <div className="detail-info-text-img-container">
+        
+      <img src={filter?.strMealThumb} alt="" />
+      
         <div className="detail-item-info-text">
           <h2>{filter?.strMeal}</h2>
           <p>{filter?.strInstructions}</p>
+        </div>
         </div>
         <div className="ingredients-sidebar">
           <h3>Igredients</h3>
