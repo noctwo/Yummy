@@ -25,9 +25,9 @@ const CategoryList = () => {
                 </Link>
             ))}
             {random && (
-                <div className="random-button">
-                    <Link to={`/category/meal/${random.idMeal}`}>Random</Link>
-                </div>
+                
+                    <Link to={`/category/meal/${random.idMeal}`}><div className="random-button">Random</div></Link>
+                
             )}
         </div>
     );

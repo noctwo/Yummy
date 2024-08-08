@@ -30,29 +30,17 @@
 
 .random-button {
   display: flex;
-  color: white;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  color: white;
   background-color: orange;
-  height: 100%;
-  width: 100%;
   cursor: pointer;
   border-radius: 12px;
-  transition: background-color 0.3s ease;
-
-  font-family: "Permanent Marker", cursive;
   font-size: 3rem;
-}
-
-.category-wrapper > a {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.random-button a {
-  color: white;
+  height: 425px;
   font-family: "Permanent Marker", cursive;
-  font-size: 30px;
 }
+
+
+
+
