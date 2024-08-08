@@ -27,7 +27,7 @@ useEffect(()=> {
           </Link>
         </div>
       ))}
-      <div className="random-button"><Link to={`http://localhost:5173/category/meal/${random?.idMeal}`}>Random</Link></div>
+      <Link to={`/category/meal/${random?.idMeal}`}><div className="random-button">Random</div></Link>
     </div>
   );
 };

@@ -33,11 +33,22 @@
   align-items: center;
   justify-content: center;
   background-color: orange;
-  height: 100px;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.3s ease;
-  height: 30vh;
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+}
+
+.category-wrapper > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
 
 .random-button a {
