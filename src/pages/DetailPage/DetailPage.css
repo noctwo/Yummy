@@ -40,10 +40,6 @@
     line-height: 2.5rem;
 }
 
-
-@media screen and (max-width: 500px){
-    .detail-item-info{
-        flex-direction: column;
-        background-color: #222;
-    }
-  }
+.ingredients-sidebar button{
+    margin-top: 2em;
+}

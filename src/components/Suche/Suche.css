@@ -1,7 +1,9 @@
 .search-wrapper{
+    margin-top: 2em;
     width: 100%;
+    max-width: 1000px;
 }
 
 .search-wrapper input[type=text]{
-    width: 50%;
+    width: 60%;
 }
