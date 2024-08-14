@@ -1,31 +1,39 @@
-# React + TypeScript + Vite
+# Yummy Pablo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1088" alt="Bildschirmfoto 2024-08-14 um 09 10 54" src="https://github.com/user-attachments/assets/5a5e5f77-b2a4-47a0-b3ea-3d260b4b8e98">
 
-Currently, two official plugins are available:
+Welcome to **Yummy**, a delightful recipe-sharing platform designed for food enthusiasts and home cooks alike. This web application allows users to explore a wide variety of recipes, making it easy to find inspiration for your next meal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Yummy Pablo is a recipe website where users can browse through a diverse collection of recipes. Whether you're looking for quick and easy dinner ideas or elaborate dishes to impress your guests, Yummy has something for everyone.
 
-- Configure the top-level `parserOptions` property like this:
+Visit the live site: [Yummy](https://yummypablo.netlify.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Yummy
+- **Recipe Browsing**: Explore a wide range of recipes categorized by meal type, cuisine, and ingredients.
+- **Search Functionality**: Quickly find recipes based on keywords, ingredients, or cuisine types.
+- **Responsive Design**: Optimized for seamless browsing on both desktop and mobile devices.
+
+## Technologies
+
+- **HTML5 & CSS3**: For structuring and styling the web pages.
+- **JavaScript / TypeScript**: For adding interactivity and handling user actions.
+- **React**: A powerful JavaScript library for building dynamic user interfaces.
+- **Netlify**: For deployment and hosting of the web application.
+
+## Installation
+
+If you want to run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/yummypablo.git
+   cd yummypablo
