@@ -1,4 +1,4 @@
-# Yummy Pablo
+# Yummy
 
 <img width="1088" alt="Bildschirmfoto 2024-08-14 um 09 10 54" src="https://github.com/user-attachments/assets/5a5e5f77-b2a4-47a0-b3ea-3d260b4b8e98">
 
